@@ -30,7 +30,7 @@ namespace IdentityTemplate.Models
     {
         //TODO:  Add dbsets here, for instance there's one for books
         //Remember, Identity adds a db set for users, so you shouldn't add that one - you will get an error
-        public DbSet<Student> Students { get; set; }
+        
         
         
         //TODO: Make sure that your connection string name is correct here.
