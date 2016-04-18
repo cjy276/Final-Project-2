@@ -7,5 +7,7 @@ namespace Team_Five_Final_Project.Models
 {
     public class Interview
     {
+
+
     }
 }

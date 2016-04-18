@@ -14,8 +14,12 @@ namespace Team_Five_Final_Project.Models
     
     //enum for majors
     public enum MajorList { MIS, InternatioanlBusiness, Finance, Marketing, SupplyChainManagement, BusinessHonors, Accounting}
+   
+    
     public class Position
     {
+        public Int32 PositionID { get; set; }
+
         public String Title { get; set; }
 
         [EnumDataType(typeof(PositionType))]

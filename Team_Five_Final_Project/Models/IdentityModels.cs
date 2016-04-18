@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.ComponentModel.DataAnnotations;
 
 namespace IdentityTemplate.Models
 {
@@ -11,9 +12,14 @@ namespace IdentityTemplate.Models
     {
      
         //TODO: Put any additional fields that you need for your user here
-        //For instance
-        public string FName { get; set; }
-        
+       
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
         
         //This method allows you to create a new user
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<AppUser> manager)
@@ -30,7 +36,9 @@ namespace IdentityTemplate.Models
     {
         //TODO:  Add dbsets here, for instance there's one for books
         //Remember, Identity adds a db set for users, so you shouldn't add that one - you will get an error
-        
+        public DbSet<Student> Students { get; set; }
+        public DbSet<CSO> CSOs { get; set; }
+        public DbSet<Recruiter> Recruiters { get; set; }
         
         
         //TODO: Make sure that your connection string name is correct here.
