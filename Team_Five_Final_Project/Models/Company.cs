@@ -7,8 +7,8 @@ using System.ComponentModel.DataAnnotations;
 namespace Team_Five_Final_Project.Models
 {
 
-  
 
+    public enum IndustryList { Accounting, Consulting, Energy, Engineering, FinancialServices, Manufacturing, Hospitality, Insurance, Marketing, RealEstate, Technology, Retail, Transportation }
     
         public class Company
     {
