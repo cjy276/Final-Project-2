@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using IdentityTemplate.Models;
+using Team_Five_Final_Project.Models;
 
-namespace IdentityTemplate
+namespace Team_Five_Final_Project
 {
    
     // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.

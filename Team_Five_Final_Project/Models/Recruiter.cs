@@ -1,9 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
 
-public class Recruiter
+
+namespace Team_Five_Final_Project.Models
 {
-	public Int32 RecruiterID { get; set; }
+    public class Recruiter
+    {
+        public Int32 RecruiterID { get; set; }
 
-   
-	
+        //navigational properties
+        public virtual Company Company { get; set; }
+
+    }
 }

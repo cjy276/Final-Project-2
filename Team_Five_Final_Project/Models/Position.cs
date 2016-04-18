@@ -10,7 +10,7 @@ namespace Team_Five_Final_Project.Models
     public enum PositionType { I, FT}
     
     //enum for industry list 
-    public enum IndustryList { Accounting, Consulting, Energy, Engineering, FinancialServices, Manufacturing, Hospitality, Insurance, Marketing, RealEstate, Technology, Retail, Transportation }
+   
     
     //enum for majors
     public enum MajorList { MIS, InternatioanlBusiness, Finance, Marketing, SupplyChainManagement, BusinessHonors, Accounting}
@@ -37,5 +37,9 @@ namespace Team_Five_Final_Project.Models
         public DateTime Deadline { get; set; }
 
         public String Description { get; set; }
+
+        //navigational properties
+        public virtual Company Company { get; set; }
+
     }
 }

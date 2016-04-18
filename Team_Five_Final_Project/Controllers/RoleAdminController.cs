@@ -9,9 +9,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
 //TODO: Change this reference to your project name
-using IdentityTemplate.Models;
+using Team_Five_Final_Project.Models;
 
-namespace IdentityTemplate.Controllers
+namespace Team_Five_Final_Project.Controllers
 {
     public class RoleAdminController : Controller
     {

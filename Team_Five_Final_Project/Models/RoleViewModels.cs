@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 
 
-namespace IdentityTemplate.Models
+namespace Team_Five_Final_Project.Models
 {
     public class RoleEditModel
     {

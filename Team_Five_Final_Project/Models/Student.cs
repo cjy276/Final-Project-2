@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Team_Five_Final_Project.Models
 {
 
-    public enum PositionType {I, FT}
+  
 
     public class Student
     {

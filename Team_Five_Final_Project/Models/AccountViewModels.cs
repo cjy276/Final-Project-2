@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityTemplate.Models
+namespace Team_Five_Final_Project.Models
 {
    
     public class LoginViewModel

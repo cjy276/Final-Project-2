@@ -6,9 +6,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using IdentityTemplate.Models;
+using Team_Five_Final_Project.Models;
 
-namespace IdentityTemplate.Controllers
+namespace Team_Five_Final_Project.Controllers
 {
     [Authorize]
     public class ManageController : Controller

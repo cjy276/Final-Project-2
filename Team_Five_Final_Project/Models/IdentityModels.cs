@@ -5,7 +5,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityTemplate.Models
+namespace Team_Five_Final_Project.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class AppUser : IdentityUser
@@ -16,11 +16,19 @@ namespace IdentityTemplate.Models
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
+
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
 
         
+
+        //navigational properties
+        public virtual Student Student { get; set; }
+        public virtual CSO CSO { get; set; }
+        public virtual Recruiter Recruiter { get; set; }
+
         //This method allows you to create a new user
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<AppUser> manager)
         {
@@ -52,6 +60,6 @@ namespace IdentityTemplate.Models
             return new AppDbContext();
         }
 
-        public System.Data.Entity.DbSet<IdentityTemplate.Models.AppRole> AppRoles { get; set; }
+        public System.Data.Entity.DbSet<Team_Five_Final_Project.Models.AppRole> AppRoles { get; set; }
     }
 }

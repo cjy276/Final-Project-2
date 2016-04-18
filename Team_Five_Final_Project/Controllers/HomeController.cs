@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace IdentityTemplate.Controllers
+namespace Team_Five_Final_Project.Controllers
 {
     public class HomeController : Controller
     {
