@@ -43,6 +43,12 @@ namespace Team_Five_Final_Project.Models
         [Required]
         [Display(Name = "First Name")]
         public string FName { get; set; }
+
+        [Required]
+        [Display(Name = "Last Name")]
+        public string LName { get; set;  }
+
+
     }
 
     public class ResetPasswordViewModel

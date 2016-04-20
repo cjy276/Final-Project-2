@@ -18,9 +18,9 @@ namespace Team_Five_Final_Project.Models
 
 
 
-        public string FirstName { get; set; }
+        public string FName { get; set; }
 
-        public string LastName { get; set; }
+        public string LName { get; set; }
 
         
 
