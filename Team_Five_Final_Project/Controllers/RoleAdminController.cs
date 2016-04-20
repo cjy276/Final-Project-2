@@ -8,7 +8,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 
-//TODO: Change this reference to your project name
+
 using Team_Five_Final_Project.Models;
 
 namespace Team_Five_Final_Project.Controllers
