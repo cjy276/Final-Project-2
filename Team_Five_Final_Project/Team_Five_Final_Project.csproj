@@ -166,9 +166,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604202237368_intialsetup.cs" />
-    <Compile Include="Migrations\201604202237368_intialsetup.Designer.cs">
-      <DependentUpon>201604202237368_intialsetup.cs</DependentUpon>
+    <Compile Include="Migrations\201604202336218_InitialSetup.cs" />
+    <Compile Include="Migrations\201604202336218_InitialSetup.Designer.cs">
+      <DependentUpon>201604202336218_InitialSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604210005527_appuserID.cs" />
+    <Compile Include="Migrations\201604210005527_appuserID.Designer.cs">
+      <DependentUpon>201604210005527_appuserID.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -218,8 +222,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201604202237368_intialsetup.resx">
-      <DependentUpon>201604202237368_intialsetup.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604202336218_InitialSetup.resx">
+      <DependentUpon>201604202336218_InitialSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604210005527_appuserID.resx">
+      <DependentUpon>201604210005527_appuserID.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

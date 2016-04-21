@@ -12,9 +12,11 @@ namespace Team_Five_Final_Project.Models
     {
      
         //TODO: Put any additional fields that you need for your user here
-       
-        [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+
+        public int AppUserID { get; set; }
+
+        //[DataType(DataType.EmailAddress)]
+        //public string Email { get; set; }
 
 
 

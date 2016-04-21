@@ -7,13 +7,13 @@ namespace Team_Five_Final_Project.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class intialsetup : IMigrationMetadata
+    public sealed partial class appuserID : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(intialsetup));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(appuserID));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604202237368_intialsetup"; }
+            get { return "201604210005527_appuserID"; }
         }
         
         string IMigrationMetadata.Source

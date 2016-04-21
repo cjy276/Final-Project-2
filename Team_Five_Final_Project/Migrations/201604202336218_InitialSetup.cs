@@ -3,7 +3,7 @@ namespace Team_Five_Final_Project.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class intialsetup : DbMigration
+    public partial class InitialSetup : DbMigration
     {
         public override void Up()
         {
@@ -80,8 +80,8 @@ namespace Team_Five_Final_Project.Migrations
                     {
                         Id = c.String(nullable: false, maxLength: 128),
                         Email = c.String(maxLength: 256),
-                        FirstName = c.String(),
-                        LastName = c.String(),
+                        FName = c.String(),
+                        LName = c.String(),
                         EmailConfirmed = c.Boolean(nullable: false),
                         PasswordHash = c.String(),
                         SecurityStamp = c.String(),
