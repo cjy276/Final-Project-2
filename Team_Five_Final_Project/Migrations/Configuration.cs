@@ -1,5 +1,7 @@
 namespace Team_Five_Final_Project.Migrations
 {
+
+    using Microsoft.AspNet.Identity.EntityFramework;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +28,12 @@ namespace Team_Five_Final_Project.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Roles.AddOrUpdate(r => r.Name,
+                new IdentityRole {Name = "Student"},
+                 new IdentityRole { Name = "Recruiter"},
+                new IdentityRole {Name = "CSO"}
+            );
         }
     }
 }
