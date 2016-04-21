@@ -1,5 +1,6 @@
 namespace Team_Five_Final_Project.Migrations
 {
+
     using Microsoft.AspNet.Identity.EntityFramework;
     using System;
     using System.Data.Entity;

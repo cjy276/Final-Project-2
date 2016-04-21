@@ -178,6 +178,10 @@
     <Compile Include="Migrations\201604210105515_roles.Designer.cs">
       <DependentUpon>201604210105515_roles.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604210119379_ManualRoleInput.cs" />
+    <Compile Include="Migrations\201604210119379_ManualRoleInput.Designer.cs">
+      <DependentUpon>201604210119379_ManualRoleInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Application.cs" />
@@ -234,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604210105515_roles.resx">
       <DependentUpon>201604210105515_roles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604210119379_ManualRoleInput.resx">
+      <DependentUpon>201604210119379_ManualRoleInput.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
