@@ -48,6 +48,7 @@ namespace Team_Five_Final_Project.Models
         [Display(Name = "Last Name")]
         public string LName { get; set;  }
 
+        //public virtual Student student { get; set; }
 
     }
 

@@ -49,7 +49,8 @@ namespace Team_Five_Final_Project.Models
         public DbSet<Student> Students { get; set; }
         public DbSet<CSO> CSOs { get; set; }
         public DbSet<Recruiter> Recruiters { get; set; }
-        
+     
+
         
         //TODO: Make sure that your connection string name is correct here.
         public AppDbContext()

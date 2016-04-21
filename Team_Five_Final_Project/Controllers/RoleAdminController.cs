@@ -50,11 +50,12 @@ namespace Team_Five_Final_Project.Controllers
 
         public ActionResult Edit(string id)
         {
+         
             AppRole role = RoleManager.FindById(id);
             string[] memberIDs = role.Users.Select(x => x.UserId).ToArray();
             IEnumerable<AppUser> members = UserManager.Users.Where(x => memberIDs.Any(y => y == x.Id));
-            IEnumerable<AppUser> nonMembers = UserManager.Users.Except(members);
-            return View(new RoleEditModel { Role = role, Members = members, NonMembers = nonMembers });
+            IEnumerable<AppUser> nonmembers = UserManager.Users.Except(members);
+            return View(new RoleEditModel { Role = role, Members = members, NonMembers = nonmembers });
         }
 
         [HttpPost]
