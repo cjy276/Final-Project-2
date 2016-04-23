@@ -22,11 +22,11 @@ namespace Team_Five_Final_Project.Models
 
         public String Title { get; set; }
 
-        [EnumDataType(typeof(PositionType))]
-        public PositionType PositionType { get; set; }
+        
+        public String PositionType { get; set; }
 
-        [EnumDataType(typeof(IndustryList))]
-        public IndustryList Industry { get; set; }
+       
+        public String Industry { get; set; }
 
         public String Location { get; set; }
 

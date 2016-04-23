@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Team_Five_Final_Project.Models
 {
@@ -12,7 +13,7 @@ namespace Team_Five_Final_Project.Models
     {
      
         //TODO: Put any additional fields that you need for your user here
-
+      
         public int AppUserID { get; set; }
 
         //[DataType(DataType.EmailAddress)]
@@ -28,6 +29,7 @@ namespace Team_Five_Final_Project.Models
 
         //navigational properties
         public virtual Student Student { get; set; }
+    
         public virtual CSO CSO { get; set; }
         public virtual Recruiter Recruiter { get; set; }
 
@@ -49,7 +51,10 @@ namespace Team_Five_Final_Project.Models
         public DbSet<Student> Students { get; set; }
         public DbSet<CSO> CSOs { get; set; }
         public DbSet<Recruiter> Recruiters { get; set; }
-     
+        public DbSet<Industry> Industries { get; set;  }
+        public DbSet<Interview> Interviews { get; set; }
+        public DbSet<Position> Positions { get; set;  }
+
 
         
         //TODO: Make sure that your connection string name is correct here.

@@ -182,6 +182,18 @@
     <Compile Include="Migrations\201604210119379_ManualRoleInput.Designer.cs">
       <DependentUpon>201604210119379_ManualRoleInput.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604231634359_IndustryTable.cs" />
+    <Compile Include="Migrations\201604231634359_IndustryTable.Designer.cs">
+      <DependentUpon>201604231634359_IndustryTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604231640494_stringindustries.cs" />
+    <Compile Include="Migrations\201604231640494_stringindustries.Designer.cs">
+      <DependentUpon>201604231640494_stringindustries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604231642527_newDbsets.cs" />
+    <Compile Include="Migrations\201604231642527_newDbsets.Designer.cs">
+      <DependentUpon>201604231642527_newDbsets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Application.cs" />
@@ -189,6 +201,7 @@
     <Compile Include="Models\CSO.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\IdentityRoles.cs" />
+    <Compile Include="Models\Industry.cs" />
     <Compile Include="Models\Interview.cs" />
     <Compile Include="Models\InterviewRoom.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -241,6 +254,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604210119379_ManualRoleInput.resx">
       <DependentUpon>201604210119379_ManualRoleInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604231634359_IndustryTable.resx">
+      <DependentUpon>201604231634359_IndustryTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604231640494_stringindustries.resx">
+      <DependentUpon>201604231640494_stringindustries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604231642527_newDbsets.resx">
+      <DependentUpon>201604231642527_newDbsets.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

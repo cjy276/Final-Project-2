@@ -21,5 +21,7 @@ namespace Team_Five_Final_Project.Models
 
         public Decimal GPA { get; set; }
 
+        //navigational
+        public virtual AppUser AppUsers { get; set; }
     }
 }

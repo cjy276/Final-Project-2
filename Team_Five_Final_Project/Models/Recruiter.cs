@@ -12,6 +12,6 @@ namespace Team_Five_Final_Project.Models
 
         //navigational properties
         public virtual Company Company { get; set; }
-
+        public virtual AppUser AppUsers { get; set; }
     }
 }

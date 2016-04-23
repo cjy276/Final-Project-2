@@ -26,9 +26,14 @@ namespace Team_Five_Final_Project.Models
         public String Description { get; set; }
         
 
-        public enum IndustryList {Accounting, Consulting, Energy, Engineering, FinancialServices, Manufacturing, Hospitality, Insurance, Marketing, RealEstate, Technology, Retail, Transportation }
-        [EnumDataType(typeof(IndustryList))]
-        public IndustryList Industry1 {get; set;}
+        
+        public String Industry1 {get; set;}
+
+        public String Industry2 { get; set; }
+
+        public String Industry3 { get; set; }
+
+
         
         
 
