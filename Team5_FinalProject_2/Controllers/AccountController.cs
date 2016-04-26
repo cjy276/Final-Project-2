@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using IdentityTemplate.Models;
+using Team5_FinalProject_2.Models;
 
-namespace IdentityTemplate.Controllers
+namespace Team5_FinalProject_2.Controllers
 {
     [Authorize]
     public class AccountController : Controller
@@ -111,7 +111,7 @@ namespace IdentityTemplate.Controllers
             if (ModelState.IsValid)
             {
                 //TODO: Add fields to user here so they will be saved to do the database
-                var user = new AppUser { UserName = model.Email, Email = model.Email, FName = model.FName };
+                var user = new AppUser { UserName = model.Student.Email, Email = model.Student.Email, FirstName = model.Student.FirstName, Major = model.Student.Major };
                 var result = await UserManager.CreateAsync(user, model.Password);
 
                 //TODO:  Once you get roles working, you may want to add users to roles upon creation

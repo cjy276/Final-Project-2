@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 
 //TODO: Add this whole class
-namespace IdentityTemplate.Models
+namespace Team5_FinalProject_2.Models
 {
     public class AppRole: IdentityRole
     {

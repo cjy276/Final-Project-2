@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace IdentityTemplate.Models
+namespace Team5_FinalProject_2.Models
 {
    
     public class LoginViewModel
@@ -22,10 +22,10 @@ namespace IdentityTemplate.Models
 
     public class RegisterViewModel
     {
-        [Required]
-        [EmailAddress]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
+        //[Required]
+        //[EmailAddress]
+        //[Display(Name = "Email")]
+        //public string Email { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
@@ -40,9 +40,12 @@ namespace IdentityTemplate.Models
 
         //TODO:  Add any fields that you need for creating a new user
         //For example, first name
-        [Required]
-        [Display(Name = "First Name")]
-        public string FName { get; set; }
+        //[Required]
+        //[Display(Name = "First Name")]
+        //public string FName { get; set; }
+
+        //TODO: Add nav prop for student
+        public virtual Student Student { get; set; }
     }
 
     public class ResetPasswordViewModel

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace IdentityTemplate.Models
+namespace Team5_FinalProject_2.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class AppUser : IdentityUser
@@ -12,7 +12,9 @@ namespace IdentityTemplate.Models
      
         //TODO: Put any additional fields that you need for your user here
         //For instance
-        public string FName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Major { get; set; }
         
         
         //This method allows you to create a new user
@@ -30,10 +32,9 @@ namespace IdentityTemplate.Models
     {
         //TODO:  Add dbsets here, for instance there's one for books
         //Remember, Identity adds a db set for users, so you shouldn't add that one - you will get an error
-        public DbSet<Book> Books { get; set; }
         
         
-        //TODO: Make sure that your connection string name is correct here.
+        
         public AppDbContext()
             : base("MyDBConnection", throwIfV1Schema: false)
         {
@@ -44,6 +45,6 @@ namespace IdentityTemplate.Models
             return new AppDbContext();
         }
 
-        public System.Data.Entity.DbSet<IdentityTemplate.Models.AppRole> AppRoles { get; set; }
+        public System.Data.Entity.DbSet<Team5_FinalProject_2.Models.AppRole> AppRoles { get; set; }
     }
 }
