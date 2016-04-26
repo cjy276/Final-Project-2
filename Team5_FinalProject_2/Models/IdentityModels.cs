@@ -32,7 +32,16 @@ namespace Team5_FinalProject_2.Models
     {
         //TODO:  Add dbsets here, for instance there's one for books
         //Remember, Identity adds a db set for users, so you shouldn't add that one - you will get an error
-        
+
+        public DbSet<Student> Student { get; set; }
+        public DbSet<CSO> CSO { get; set; }
+        public DbSet<Recruiter> Recruiter { get; set; }
+        public DbSet<Company> Company { get; set; }
+        public DbSet<Interview> Interview { get; set; }
+        public DbSet<Student> Student { get; set; }
+        public DbSet<Student> Student { get; set; }
+
+
         
         
         public AppDbContext()
