@@ -191,6 +191,10 @@
     <Compile Include="Migrations\201604261951170_Identity2.Designer.cs">
       <DependentUpon>201604261951170_Identity2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604262051512_DBSet.cs" />
+    <Compile Include="Migrations\201604262051512_DBSet.Designer.cs">
+      <DependentUpon>201604262051512_DBSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Company.cs" />
@@ -228,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604261951170_Identity2.resx">
       <DependentUpon>201604261951170_Identity2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604262051512_DBSet.resx">
+      <DependentUpon>201604262051512_DBSet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

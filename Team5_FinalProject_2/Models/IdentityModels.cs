@@ -14,7 +14,7 @@ namespace Team5_FinalProject_2.Models
         //For instance
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Major { get; set; }
+        public Major Major { get; set; }
         
         
         //This method allows you to create a new user
@@ -38,8 +38,8 @@ namespace Team5_FinalProject_2.Models
         public DbSet<Recruiter> Recruiter { get; set; }
         public DbSet<Company> Company { get; set; }
         public DbSet<Interview> Interview { get; set; }
-        public DbSet<Student> Student { get; set; }
-        public DbSet<Student> Student { get; set; }
+        public DbSet<Position> Position { get; set; }
+        public DbSet <Room> Room { get; set; }
 
 
         

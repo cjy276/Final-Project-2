@@ -9,6 +9,8 @@ namespace Team5_FinalProject_2.Models
     public class Recruiter
     {
 
+        public Int32 RecruiterID { get; set; }
+
         [Required]
         [Display(Name = "First Name")]
         public String FirstName { get; set; }

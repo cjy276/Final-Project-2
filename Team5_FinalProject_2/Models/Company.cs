@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -8,7 +9,7 @@ namespace Team5_FinalProject_2.Models
     public class Company
     {
 
-        public Int32 CompandyID { get; set; }
+        public Int32 CompanyID { get; set; }
 
         [Required]
         [Display(Name = "Email Address")]
@@ -21,7 +22,7 @@ namespace Team5_FinalProject_2.Models
 
         public List<Recruiter> Recruiters { get; set; }
 
-        public List<Postition> Postitions { get; set; }
+        public List<Position> Postitions { get; set; }
 
        
 

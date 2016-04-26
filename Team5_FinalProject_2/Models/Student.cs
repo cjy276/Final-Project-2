@@ -47,14 +47,7 @@ namespace Team5_FinalProject_2.Models
 
         
 
-      
-
-
-
-
-
-        public virtual AppUser AppUser { get; set; }
+  
 
 
     }
-}
