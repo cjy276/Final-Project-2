@@ -106,13 +106,31 @@ namespace Team5_FinalProject_2.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
+        
+
+
+    
+
+        public void Create([Bind(Include = "MemberID,FirstName,LastName,EmailAddress,PhoneNumber,OKToText,Major")] Student Student)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Members.Add(members);
+                db.SaveChanges();
+
+                
+            }
+        }
+
+
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
             {
                 //TODO: Add fields to user here so they will be saved to do the database
-                var user = new AppUser { UserName = model.Student.Email, Email = model.Student.Email, FirstName = model.Student.FirstName, Major = model.Student.Major };
+                var user = new AppUser { UserName = model.Student.Email, Email = model.Student.Email, FirstName = model.Student.FirstName};
                 var result = await UserManager.CreateAsync(user, model.Password);
+                
 
                 //TODO:  Once you get roles working, you may want to add users to roles upon creation
                 // await UserManager.AddToRoleAsync(user.Id, "User");
